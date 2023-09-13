@@ -9,7 +9,7 @@
   <body class="">
     <!--NAVBAR INICIO-->
     <div
-      class="sticky box-border top-0 w-[90vw] mt-6 bg-slate-100 hover:translate-y-1 transition duration-500 group rounded-full hover:bg-black p-4 left-0 right-0 mx-auto shadow-2xl flex items-center justify-start md:justify-between lg:justify-between xl:justify-between 2xl:justify-between text-center z-50"
+      class="sticky box-border top-0 w-[90vw] mt-6 bg-slate-100 hover:-translate-y-1 transition duration-500 group rounded-full hover:bg-black p-4 left-0 right-0 mx-auto shadow-2xl flex items-center justify-start md:justify-between lg:justify-between xl:justify-between 2xl:justify-between text-center z-30"
     >
       <button class="lg:pl-8 w-9 h-9 group-hover:invert rounded-full">
         <svg
@@ -82,14 +82,14 @@
         </h2>
       </a>
       <div class="flex flex-nowrap mr-5">
-        <a
+        <button
           class="hidden hover:underline group-hover:text-white md:block lg:block ml-2 font-semibold font-mono text-base"
-          href=""
-          >Ingreso</a
-        ><a
-          href=""
+          id="abrirModalInicio"
+          >Ingreso</button
+        ><button id="abrirModalRegistro"
+          
           class="hidden hover:underline group-hover:text-white md:block lg:block ml-2 font-semibold text-base font-mono"
-          >Registro</a
+          >Registro</button
         >
       </div>
     </div>
@@ -109,7 +109,7 @@
     </div>
     <!--Fin CONTENEDOR PÁGINA-->
     <!--INICIO SESIÓN INICIO-->
-    <div class="fixed right-0 hidden top-0 z-10 h-screen bg-white">
+    <div id="modalInicio" class="fixed right-0 hidden top-0 z-10 h-screen bg-white">
       <div class="flex-no-wrap mb-3 flex items-baseline justify-between p-3">
         <h3 class="text-xl font-semibold">Entrar</h3>
         <a class="font-medium" href="">Cerrar</a>
