@@ -83,8 +83,18 @@
       </a>
       <div class="flex flex-nowrap mr-5">
         <button
+<<<<<<< HEAD
           onclick="abrirModalInicio();"
           class="hidden hover:underline group-hover:text-white md:block lg:block ml-2 font-semibold font-mono text-base"
+=======
+          class="hidden hover:underline group-hover:text-white md:block lg:block ml-2 font-semibold font-mono text-base"
+          id="abrirModalInicio"
+          >Ingreso</button
+        ><button id="abrirModalRegistro"
+          
+          class="hidden hover:underline group-hover:text-white md:block lg:block ml-2 font-semibold text-base font-mono"
+          >Registro</button
+>>>>>>> fd4041bc77bf097e153e173be2d3c7c4aab9faef
         >
           Ingreso</button
         ><button
@@ -111,6 +121,7 @@
     </div>
     <!--Fin CONTENEDOR PÁGINA-->
     <!--INICIO SESIÓN INICIO-->
+<<<<<<< HEAD
     <div
       id="modalInicio"
       class="h-screen w-screen hidden bg-black/60 fixed inset-0 z-40"
@@ -162,6 +173,47 @@
             >¿Has olvidado tu contraseña?</a
           >
         </div>
+=======
+    <div id="modalInicio" class="fixed right-0 hidden top-0 z-10 h-screen bg-white">
+      <div class="flex-no-wrap mb-3 flex items-baseline justify-between p-3">
+        <h3 class="text-xl font-semibold">Entrar</h3>
+        <a class="font-medium" href="">Cerrar</a>
+      </div>
+      <hr />
+      <form action="" method="post" class="mt-4">
+        <label
+          class="mb-3 ml-6 mr-16 block whitespace-nowrap text-sm font-normal"
+        >
+          Nombre de usuario o correo electrónico
+          <span class="text-red-600">*</span>
+        </label>
+        <input
+          type="text"
+          class="mx-auto mb-8 block h-9 w-[90%] border border-gray-300 p-3 text-sm text-gray-500 shadow-lg focus:outline-none"
+        />
+        <label
+          class="mb-3 ml-6 mr-16 block whitespace-nowrap text-sm font-normal first-letter:text-base"
+        >
+          Contraseña
+          <span class="text-red-600">*</span>
+        </label>
+        <input
+          type="password"
+          class="mx-auto mb-10 block h-9 w-[90%] border border-gray-300 p-3 text-sm text-gray-500 shadow-lg focus:outline-none"
+        />
+        <input
+          type="submit"
+          value="Iniciar sesión"
+          class="mx-auto mb-4 block h-9 w-[90%] bg-blue-950 text-white transition duration-1000 hover:bg-blue-900 hover:font-semibold hover:shadow-sm hover:shadow-blue-800"
+        />
+      </form>
+      <div class="text-center">
+        <a
+          class="mt-5 cursor-pointer text-sm text-blue-400 hover:border-b hover:border-blue-500 hover:text-blue-500"
+          >¿Has olvidado tu contraseña?</a
+        >
+      </div>
+>>>>>>> fd4041bc77bf097e153e173be2d3c7c4aab9faef
 
         <hr class="mb-7 mt-4" />
         <div class="text-center">

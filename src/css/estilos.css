@@ -947,6 +947,7 @@ video {
 }
 
 .animate-zoomIn {
+<<<<<<< HEAD
   animation: zoomIn 0.5s ease-in-out;
 }
 
@@ -962,6 +963,9 @@ video {
 
 .animate-zoomOut {
   animation: zoomOut 0.5s ease-in-out;
+=======
+  animation: zoomIn 1s ease-in-out;
+>>>>>>> fd4041bc77bf097e153e173be2d3c7c4aab9faef
 }
 
 .cursor-pointer {
@@ -1459,11 +1463,6 @@ video {
 
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:translate-y-1:hover {
-  --tw-translate-y: 0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
