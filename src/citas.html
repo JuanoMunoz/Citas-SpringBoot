@@ -1,257 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Navbar</title>
-    <link rel="stylesheet" href="css/estilos.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-    />
-  </head>
-  <body class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body class="scroll-smooth overflow-x-hidden">
+  <div
+       class="w-screen h-screen animate-fadeIn bg-[url('https://i0.wp.com/zeke.com/wp-content/uploads/2011/08/S1150242.jpg?w=1620&ssl=1')] bg-cover relative">
     <div
-      class="w-screen h-screen animate-fadeIn bg-[url('https://i0.wp.com/zeke.com/wp-content/uploads/2011/08/S1150242.jpg?w=1620&ssl=1')] bg-cover relative"
-    >
-      <div
-        class="text-white font-mono absolute top-0 flex flex-col items-center justify-center left-0 w-full h-full z-10"
-      >
-        <h2 class="text-9xl font-extrabold">Citas</h2>
-        <h3 class="text-2xl font-bold">
-          Administrador
-          <!--agenda con nosotros! (en vista de usuario)-->
-        </h3>
-      </div>
-      <div class="bg-black opacity-40 w-full h-full"></div>
+         class="text-white font-mono absolute top-0 flex flex-col items-center justify-center left-0 w-full h-full z-10">
+      <h2 class="text-9xl font-extrabold">Citas</h2>
+      <h3 class="text-2xl font-bold">
+        Administrador
+        <!--agenda con nosotros! (en vista de usuario)-->
+      </h3>
     </div>
-    <!--NAVBAR INICIO-->
-    <div
-      class="sticky box-border top-0 w-[90vw] mt-6 bg-slate-100 hover:-translate-y-1 transition duration-500 group rounded-full hover:bg-black p-4 left-0 right-0 mx-auto shadow-2xl flex items-center justify-start md:justify-between lg:justify-between xl:justify-between 2xl:justify-between text-center z-30"
-    >
-      <button class="lg:pl-8 w-9 h-9 group-hover:invert rounded-full">
-        <svg
-          class="h-6 w-6 mx-auto"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          xmlns:svgjs="http://svgjs.com/svgjs"
-          version="1.1"
-          width="512"
-          height="512"
-          x="0"
-          y="0"
-          viewBox="0 0 124 124"
-          style="enable-background: new 0 0 512 512"
-          xml:space="preserve"
-          class=""
-        >
-          <g>
-            <g xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M112,6H12C5.4,6,0,11.4,0,18s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,6,112,6z"
-                fill="#050404"
-                data-original="#000000"
-                class=""
-              />
-              <path
-                d="M112,50H12C5.4,50,0,55.4,0,62c0,6.6,5.4,12,12,12h100c6.6,0,12-5.4,12-12C124,55.4,118.6,50,112,50z"
-                fill="#050404"
-                data-original="#000000"
-                class=""
-              />
-              <path
-                d="M112,94H12c-6.6,0-12,5.4-12,12s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,94,112,94z"
-                fill="#050404"
-                data-original="#000000"
-                class=""
-              />
-            </g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
-            <g xmlns="http://www.w3.org/2000/svg"></g>
+    <div class="bg-black opacity-40 w-full h-full"></div>
+  </div>
+  <!--NAVBAR INICIO-->
+  <div
+       class="sticky box-border top-0 w-[90vw] mt-6 bg-slate-100 hover:translate-y-1 transition duration-500 group rounded-full hover:bg-black p-4 left-0 right-0 mx-auto shadow-2xl flex items-center justify-start md:justify-between lg:justify-between xl:justify-between 2xl:justify-between text-center z-30">
+    <button class="lg:pl-8 w-9 h-9 group-hover:invert rounded-full">
+      <svg class="h-6 w-6 mx-auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+           xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 124 124"
+           style="enable-background: new 0 0 512 512" xml:space="preserve" class="">
+        <g>
+          <g xmlns="http://www.w3.org/2000/svg">
+            <path d="M112,6H12C5.4,6,0,11.4,0,18s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,6,112,6z" fill="#050404"
+                  data-original="#000000" class="" />
+            <path d="M112,50H12C5.4,50,0,55.4,0,62c0,6.6,5.4,12,12,12h100c6.6,0,12-5.4,12-12C124,55.4,118.6,50,112,50z"
+                  fill="#050404" data-original="#000000" class="" />
+            <path d="M112,94H12c-6.6,0-12,5.4-12,12s5.4,12,12,12h100c6.6,0,12-5.4,12-12S118.6,94,112,94z" fill="#050404"
+                  data-original="#000000" class="" />
           </g>
-        </svg>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+          <g xmlns="http://www.w3.org/2000/svg"></g>
+        </g>
+      </svg>
+    </button>
+    <a class="flex flex-shrink md:ml-20 lg:ml-20 xl:ml-20 items-center" href="index.html">
+      <img src="img/luz.png" class="w-12 h-12 rounded-full group-hover:invert transition duration-500" alt="" />
+      <h2
+          class="hidden group-hover:italic hover:underline group-hover:text-white lg:block ml-2 font-bold font-mono text-xl">
+        Modistería D.L.
+      </h2>
+    </a>
+    <div class="flex flex-nowrap mr-5">
+      <a class="hidden hover:underline group-hover:text-white md:block lg:block ml-2 font-semibold font-mono text-base"
+         href="">Ingreso</a><a href=""
+         class="hidden hover:underline group-hover:text-white md:block lg:block ml-2 font-semibold text-base font-mono">Registro</a>
+    </div>
+  </div>
+  <!--NAVBAR FINAL-->
+
+  <!--Inicio CONTENEDOR PÁGINA-->
+  <div class="mt-10">
+    <!--VERSIÓN CLIENTE INICIO-->
+
+    <!--VERSIÓN CLIENTE FIN-->
+
+    <!--VERSIÓN ADMIN INICIO-->
+    <div>
+      <!-- Botón agregar cita -->
+      <button title="Agregar Citas" onclick="modalAgregarCita()"
+              class="mx-auto flex justify-center items-center text-white font-bold hover:bg-gray-200 bg-black py-5 text-xl mt-10 w-[42rem] h-16 rounded-xl group transition duration-500 hover:shadow-2xl hover:scale-105">
+        <span class="group-hover:hidden">Agregar cita</span><span
+              class="hidden group-hover:inline transition duration-500 text-black"><span style="font-size: 2.5rem"
+                class="mt-2 material-symbols-outlined">
+            add_circle
+          </span></span>
       </button>
-      <a
-        class="flex flex-shrink md:ml-20 lg:ml-20 xl:ml-20 items-center"
-        href="index.html"
-      >
-        <img
-          src="img/luz.png"
-          class="w-12 h-12 rounded-full group-hover:invert transition duration-500"
-          alt=""
-        />
-        <h2
-          class="hidden group-hover:italic hover:underline group-hover:text-white lg:block ml-2 font-bold font-mono text-xl"
-        >
-          Modistería D.L.
-        </h2>
-      </a>
-      <div class="flex flex-nowrap mr-5">
-        <a
-          class="hidden hover:underline group-hover:text-white md:block lg:block ml-2 font-semibold font-mono text-base"
-          href=""
-          >Ingreso</a
-        ><a
-          href=""
-          class="hidden hover:underline group-hover:text-white md:block lg:block ml-2 font-semibold text-base font-mono"
-          >Registro</a
-        >
-      </div>
-    </div>
-    <!--NAVBAR FINAL-->
-
-    <!--Inicio CONTENEDOR PÁGINA-->
-    <div class="mt-10">
-      <!--VERSIÓN CLIENTE INICIO-->
-
-      <!--VERSIÓN CLIENTE FIN-->
-
-      <!--VERSIÓN ADMIN INICIO-->
-      <div>
-        <!-- Botón agregar cita -->
-        <a
-          class="mx-auto block text-center text-white bg-black py-5 text-xl italic mt-10 min-w-[42rem] max-w-2xl rounded-xl transition-shadow delay-200 duration-1000 hover:shadow-2xl hover:scale-105 hover:-translate-y-1"
-          >Agregar cita
-        </a>
-        <!-- Fin botón agregar cita -->
-        <div
-          class="group mx-auto mt-10 grid max-h-72 min-h-[18rem] min-w-[42rem] max-w-2xl grid-cols-3 gap-3 rounded-xl transition-shadow delay-200 duration-1000 hover:shadow-2xl"
-        >
-          <img
-            src="https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw631d879e/original/90_1012146-1A08973_1W000_10_BuckleFormalShirt-Clothing-Versace-online-store_0_2.jpg?sw=850&q=85&strip=true"
-            alt=""
-            class="h-full"
-          />
-          <div class="col-span-2 flex flex-col flex-nowrap font-mono">
-            <div class="my-5 flex flex-nowrap items-start font-semibold">
-              <h3 class="text-xl">
-                Cristian Veléz <span class="text-purple-950">-</span> 12/09/2023
-              </h3>
-              <div
-                class="ml-auto mr-3 opacity-0 transition-opacity delay-200 duration-700 group-hover:opacity-100"
-              >
-                <a
-                  class="material-symbols-outlined cursor-pointer"
-                  title="Editar"
-                >
-                  edit
-                </a>
-                <button
-                  class="material-symbols-outlined cursor-pointer"
-                  title="Borrar"
-                  onclick="abrirModal()"
-                >
-                  delete
-                </button>
-              </div>
-            </div>
-            <p class="">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ut,
-              dolorum maiores aspernatur a dolore itaque odit eligendi sint,
-              voluptates officia aperiam quo! Repellendus necessitatibus culpa
-              quos eum qui magni.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!--VERSIÓN ADMIN FIN-->
-    </div>
-    <!-- INICIO MODALES -->
-
-    <!-- NODAL AGREGAR  -->
-
-    <!-- FIN MODAL AGREGAR -->
-
-    <!-- Modal editar -->
-    <!-- FIN Modal editar -->
-
-    <!-- MODAL BORRAR -->
-    <div
-      class="w-screen h-screen fixed z-50 inset-0 items-center justify-center bg-black/60 hidden"
-      id="modalBorrar"
-    >
+      <!-- Fin botón agregar cita -->
       <div
-        id="modalBorrarContent"
-        class="w-[32rem] h-80 animate-[fadeIn_1s] text-white font-mono hover:shadow-inner text-center bg-gray-800 rounded-xl"
-      >
-        <span
-          class="material-symbols-outlined mt-6 block shadow-inner border-8 p-3 rounded-full"
-          style="font-size: 5rem"
-        >
-          delete
-        </span>
-        <h2 class="font-bold text-2xl mt-6">¿Deseas eliminar la cita?</h2>
-        <div class="mx-auto mt-6 flex flex-nowrap justify-center">
-          <button
-            onclick="cerrarModalBorrar()"
-            class="transition duration-300 delay-75 ml-6 text-center bg-red-500 p-3 h-12 rounded-md hover:scale-105 hover:shadow-md inline-block hover:shadow-red-800 w-28 hover:bg-red-600 group"
-          >
-            <span class="font-semibold group-hover:font-bold group-hover:hidden"
-              >Cancelar</span
-            >
-            <span class="group-hover:block hidden">
-              <span class="material-symbols-outlined group-hover:block">
-                close
-              </span>
-            </span></button
-          ><a
-            href="#"
-            id="enviar"
-            class="ml-10 transition duration-300 delay-75 text-center bg-green-600 p-3 rounded-md hover:scale-105 hover:shadow-md inline-block hover:shadow-green-800 w-28 h-12 hover:bg-green-500 group"
-            ><span
-              class="font-semibold group-hover:font-bold group-hover:hidden"
-              >Aceptar</span
-            >
-            <span class="group-hover:block hidden">
-              <span class="material-symbols-outlined group-hover:block">
-                done
-              </span>
-            </span>
-          </a>
+           class="group mx-auto mt-10 grid max-h-72 min-h-[18rem] min-w-[42rem] max-w-2xl grid-cols-3 gap-3 rounded-xl transition-shadow delay-200 duration-1000 hover:shadow-2xl">
+        <img src="https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw631d879e/original/90_1012146-1A08973_1W000_10_BuckleFormalShirt-Clothing-Versace-online-store_0_2.jpg?sw=850&q=85&strip=true"
+             alt="" class="h-full" />
+        <div class="col-span-2 flex flex-col flex-nowrap font-mono">
+          <div class="my-5 flex flex-nowrap items-start font-semibold">
+            <h3 class="text-xl">
+              Cristian Veléz <span class="text-purple-950">-</span> 12/09/2023
+            </h3>
+            <div class="ml-auto mr-3 opacity-0 transition-opacity delay-200 duration-700 group-hover:opacity-100">
+              <button onclick="abrirModalEditar()" class="material-symbols-outlined cursor-pointer" title="Editar">
+                edit
+              </button>
+              <button class="material-symbols-outlined cursor-pointer" title="Borrar" onclick="abrirModalBorrar()">
+                delete
+              </button>
+            </div>
+          </div>
+          <p class="">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ut,
+            dolorum maiores aspernatur a dolore itaque odit eligendi sint,
+            voluptates officia aperiam quo! Repellendus necessitatibus culpa
+            quos eum qui magni.
+          </p>
         </div>
+      </div>
+    </div>
+    <!--VERSIÓN ADMIN FIN-->
+  </div>
+  <!-- INICIO MODALES -->
+
+  <!-- NODAL AGREGAR  -->
+  <form id="modalAgregar"
+        class=" hidden  z-50 fixed inset-0 bg-black/50 flex-nowrap justify-center items-center w-screen h-screen">
+
+    <!-- Slide 1 -->
+    <div id="slide1" class="z-[100] animate-zoomOut fixed   bg-gray-800 rounded-lg w-[27rem] h-60  ">
+      <div class=" flex flex-nowrap items-center justify-around self-start  w-full h-20 bg-gray-900 text-white ">
+        <h2 class="text-4xl font-bold font-mono text-center text-white underline-offset-4 underline-pink-700">
+          Agregar Nombre</h2>
+        <button class="mt-2 hover:text-gray-300" title="cerrar"><span style="font-size: 2rem;"
+                class="material-symbols-outlined">
+            close
+          </span></button>
+
+      </div>
+      <!-- Formulario agregar cita -->
+
+      <div class="">
+        <div class=" flex items-center  justify-center mt-12"><input
+                 class="texto inline-block  border-none  text-white text-xl
+                             p-2 bg-gray-800 outline-pink-800 shadow-md shadow-pink-800  focus:outline-pink-800 outline focus:outline-2 rounded-lg font-extrabold"
+                 type="text" name="" placeholder="Digita el nombre..." id="">
+          <button title="Siguiente" type="button" onclick="cambiarSlide1()"
+                  class="boton mt-1.5  ml-3  hover:text-pink-700  text-pink-900 hidden"><span style="font-size: 2rem;"
+                  class="material-symbols-outlined">
+              navigate_next
+            </span></button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="  animate-zoomOut fixed   bg-gray-800 rounded-lg w-[27rem] h-60  ">
+      <div class=" flex flex-nowrap items-center justify-around self-start  w-full h-20 bg-gray-900 text-white ">
+        <h2 class="text-4xl font-bold font-mono text-center text-white underline-offset-4 underline-pink-700">
+          Agregar Fecha</h2>
+        <button type="button" onclick="cambiarSlide2()" class="mt-2 hover:text-gray-300" title="cerrar"><span
+                style="font-size: 2rem;" class="material-symbols-outlined">
+            close
+          </span></button>
+
+      </div>
+      <div class="">
+        <div class=" flex items-center  justify-center mt-12"><input
+                 class="texto inline-block  border-none  text-white text-xl
+                                       p-2 bg-gray-800 outline-pink-800 shadow-md shadow-pink-800  focus:outline-pink-800 outline focus:outline-2 rounded-lg font-extrabold"
+                 type="text" name="" placeholder="Digita el nombre..." id="">
+          <button title="Siguiente" class="boton mt-1.5  ml-3  hover:text-pink-700  text-pink-900 hidden"><span
+                  style="font-size: 2rem;" class="material-symbols-outlined">
+              navigate_next
+            </span></button>
+        </div>
+      </div>
+
+    </div>
+
+  </form>
+
+  <!-- FIN MODAL AGREGAR -->
+
+  <!-- Modal editar -->
+  <div id="modalEditar"
+       class="fixed inset-0  flex-nowrap justify-center items-center bg-black/60 hidden w-screen h-screen z-40">
+    <!-- Modal Editar Content -->
+    <div id="modalEditarContent"
+         class="bg-gray-800 animate-zoomOut  grid grid-cols-6 grid-rows-4 rounded-xl shadow-inner shadow-gray-800  ">
+      <div
+           class="border-gray-900  bg-gray-900  flex flex-nowrap relative p-6 justify-between items-center border-b-8 pl-5 text-white font-mono font-bold col-span-4">
+        <h1 class="text-3xl">Editar Citas</h1>
+        <button class="absolute  hover:scale-105 items-center flex -top-3 -left-3 rounded-full bg-black"
+                onclick="cerrarModalEditar()"><span class="material-symbols-outlined" style="font-size: 2rem;">
+            close
+          </span></button>
       </div>
       <button
-        onclick="cerrarModalBorrar()"
-        class="text-white absolute top-2 right-5"
-      >
-        <span style="font-size: 3rem" class="material-symbols-outlined">
-          close
-        </span>
+              class="border-l-8 group  border-gray-900 rounded-r-lg bg-[url('https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw631d879e/original/90_1012146-1A08973_1W000_10_BuckleFormalShirt-Clothing-Versace-online-store_0_2.jpg?sw=850&q=85&strip=true')] bg-cover bg-center h-full w-full row-span-4 col-span-2 relative">
+        <div class="absolute  group-hover:block   hidden w-full h-full bg-white/80 inset-0 rounded-r-lg"></div>
+        <div class="absolute group-hover:flex  hidden inset-0  flex-col items-center justify-center" <span class="">
+          <span class="border-2 p-2 rounded-full border-black material-symbols-outlined">
+            photo_camera
+          </span></span>
+          <div class="mt-2 text-lg font-semibold">Editar Foto</div>
+        </div>
       </button>
+      <!-- FORMULARIO EDITAR -->
+
+      <div class="col-span-4 row-span-3 mx-3">
+        <form action="" class="mt-4 ml-1 font-mono">
+          <div class="flex items-end">
+            <input type="text" name=""
+                   class="border-none text-white text-xl p-1 bg-gray-800 focus:border-none focus:outline-gray-800 rounded-lg font-extrabold"
+                   id="" value="Cristian Vélez" />
+            <input type="text" name="" disabled
+                   class="border-none ml-2 text-white text-xl p-1 bg-gray-800 w-32 focus:border-none font-extrabold focus:outline-gray-800 rounded-lg"
+                   id="" value="14/09/2023" />
+            <button class="text-white">
+              <span class="material-symbols-outlined"> calendar_month </span>
+            </button>
+          </div>
+          <textarea name=""
+                    class="my-2 overflow-hidden resize-none border-none whitespace-normal text-white text-md w-full max-h-full min-h-full bg-gray-800 focus:border-none focus:outline-gray-800 rounded-lg"
+                    id="" rows="7">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maxime cum laborum ipsum, esse quaerat non porro voluptatem. Exercitationem officiis quos vel neque illum corporis dolorem repudiandae? Harum, debitis vero!
+</textarea>
+          <div class="flex text-white font-mono text-lg font-bold justify-around mb-5 mt-2">
+            <button type="button" onclick="cerrarModalEditar()"
+                    class="transition duration-300 delay-75 bg-red-500 h-10 rounded-md hover:scale-105 hover:shadow-md inline-block hover:shadow-red-800 w-28 hover:bg-red-600 group">
+              <span class="group-hover:font-bold group-hover:hidden">Cancelar</span>
+              <span class="group-hover:block hidden">
+                <span class="material-symbols-outlined group-hover:block">
+                  close
+                </span>
+              </span>
+            </button>
+            <input type="submit" value="Editar"
+                   class="transition duration-300 delay-75 bg-green-600 h-10 rounded-md hover:scale-105 hover:shadow-md inline-block hover:shadow-green-800 w-28 hover:bg-green-500 group" />
+          </div>
+        </form>
+      </div>
     </div>
-    <!-- FIN MODAL BORRAR MODAL  -->
-    <!-- FIN MODALES -->
-    <!--Fin CONTENEDOR PÁGINA-->
-    <!-- SCRIPTS -->
-    <script>
-      //Zona de recolección de datos
-      let modalBorrar = document.getElementById("modalBorrar");
-      let modalBorrarContent = document.getElementById("modalBorrarContent");
-      function abrirModal() {
-        modalBorrar.classList.remove("hidden");
-        modalBorrar.classList.add("flex");
-      }
-      function cerrarModalBorrar() {
-        modalBorrarContent.classList.add("animate-zoomIn");
-        setTimeout(function () {
-          modalBorrarContent.classList.remove("animate-zoomIn");
-          modalBorrar.classList.remove("flex");
-          modalBorrar.classList.add("hidden");
-        }, 2000);
-      }
-    </script>
-  </body>
+  </div>
+  <!-- FIN Modal editar -->
+
+  <!-- MODAL BORRAR -->
+  <div class="w-screen h-screen fixed z-50 inset-0 items-center justify-center bg-black/60 hidden" id="modalBorrar">
+    <div id="modalBorrarContent"
+         class="w-[32rem] h-80 animate-zoomOut text-white font-mono hover:shadow-inner text-center bg-gray-800 rounded-xl">
+      <span class="material-symbols-outlined mt-6 block shadow-inner border-8 p-3 rounded-full" style="font-size: 5rem">
+        delete
+      </span>
+      <h2 class="font-bold text-2xl mt-6">¿Deseas eliminar la cita?</h2>
+      <div class="mx-auto mt-6 flex flex-nowrap justify-center">
+        <button onclick="cerrarModalBorrar()"
+                class="transition duration-300 delay-75 ml-6 text-center bg-red-500 p-3 h-12 rounded-md hover:scale-105 hover:shadow-md inline-block hover:shadow-red-800 w-28 hover:bg-red-600 group">
+          <span class="font-semibold group-hover:font-bold group-hover:hidden">Cancelar</span>
+          <span class="group-hover:block hidden">
+            <span class="material-symbols-outlined group-hover:block">
+              close
+            </span>
+          </span></button><a href="#" id="enviar"
+           class="ml-10 transition duration-300 delay-75 text-center bg-green-600 p-3 rounded-md hover:scale-105 hover:shadow-md inline-block hover:shadow-green-800 w-28 h-12 hover:bg-green-500 group"><span
+                class="font-semibold group-hover:font-bold group-hover:hidden">Aceptar</span>
+          <span class="group-hover:block hidden">
+            <span class="material-symbols-outlined group-hover:block">
+              done
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+    <button onclick="cerrarModalBorrar()" class="text-white absolute top-2 right-5">
+      <span style="font-size: 3rem" class="material-symbols-outlined">
+        close
+      </span>
+    </button>
+  </div>
+  <!-- FIN MODAL BORRAR MODAL  -->
+  <!-- FIN MODALES -->
+  <!--Fin CONTENEDOR PÁGINA-->
+  <!-- SCRIPTS -->
+  <script src="js/modals.js"></script>
+</body>
+
 </html>
