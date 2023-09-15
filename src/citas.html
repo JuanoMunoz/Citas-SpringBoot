@@ -25,7 +25,7 @@
   </div>
   <!--NAVBAR INICIO-->
   <div
-       class="sticky box-border top-0 w-[90vw] mt-6 bg-slate-100 hover:translate-y-1 transition duration-500 group rounded-full hover:bg-black p-4 left-0 right-0 mx-auto shadow-2xl flex items-center justify-start md:justify-between lg:justify-between xl:justify-between 2xl:justify-between text-center z-30">
+       class="sticky box-border top-0 w-[90vw] mt-6 bg-slate-100 hover:translate-y-1 transition duration-500 group rounded-2xl hover:bg-black p-4 left-0 right-0 mx-auto shadow-2xl flex items-center justify-start md:justify-between lg:justify-between xl:justify-between 2xl:justify-between text-center z-30">
     <button class="lg:pl-8 w-9 h-9 group-hover:invert rounded-full">
       <svg class="h-6 w-6 mx-auto" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
            xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0" viewBox="0 0 124 124"
@@ -79,59 +79,83 @@
     <!--VERSIÓN CLIENTE FIN-->
 
     <!--VERSIÓN ADMIN INICIO-->
-    <div>
-      <!-- Botón agregar cita -->
-      <button title="Agregar Citas" onclick="modalAgregarCita()"
-              class="mx-auto flex justify-center items-center text-white font-bold hover:bg-gray-200 bg-black py-5 text-xl mt-10 w-[42rem] h-16 rounded-xl group transition duration-500 hover:shadow-2xl hover:scale-105">
-        <span class="group-hover:hidden">Agregar cita</span><span
-              class="hidden group-hover:inline transition duration-500 text-black"><span style="font-size: 2.5rem"
-                class="mt-2 material-symbols-outlined">
-            add_circle
-          </span></span>
+    <!-- Botón agregar cita -->
+    <button title="Agregar Citas" onclick="modalAgregarCita()"
+            class="mx-auto flex justify-center items-center text-white font-bold hover:bg-gray-200 bg-black py-5 text-xl mt-10 w-[42rem] h-16 rounded-xl group transition duration-500 hover:shadow-2xl hover:scale-105">
+
+      <span class="group-hover:hidden">Agregar cita</span><span
+            class="hidden group-hover:inline transition duration-500 text-black"><span style="font-size: 2.5rem"
+              class="mt-2 material-symbols-outlined">
+          add_circle
+        </span></span>
+    </button>
+    <div class="w-full flex justify-between ">
+      <h1 class="ml-20 inline-block my-5 text-5xl font-bold font-mono">Hoy</h1>
+      <button id="" class="inline-flex mr-10 self-center  rounded-lg relative  items-center group"><span
+              style="font-size: 2rem;" class="  rounded-lg group-hover:bg-gray-300 material-symbols-outlined">
+          chevron_left
+        </span><span style="font-size: 2.5rem;" class=" material-symbols-outlined">
+          tune
+        </span>
+        <div
+             class="absolute opacity-0 group-hover:opacity-100 transition duration-300  w-72 -left-72 top-0 bg-white shadow-2xl rounded-xl  ">
+          <a href="" class="block mx-auto  hover:font-bold   py-2 hover:bg-gray-100  bg-white  ">
+            Hoy</a>
+          <a href="" class="block mx-auto  py-2  hover:font-bold hover:bg-gray-100 bg-white  ">Mañana</a>
+          <a href="" class="block mx-auto  py-2 hover:font-bold hover:bg-gray-100  bg-white  ">Próximo
+            mes</a>
+        </div>
       </button>
-      <!-- Fin botón agregar cita -->
-      <div
-           class="group mx-auto mt-10 grid max-h-72 min-h-[18rem] min-w-[42rem] max-w-2xl grid-cols-3 gap-3 rounded-xl transition-shadow delay-200 duration-1000 hover:shadow-2xl">
-        <img src="https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw631d879e/original/90_1012146-1A08973_1W000_10_BuckleFormalShirt-Clothing-Versace-online-store_0_2.jpg?sw=850&q=85&strip=true"
-             alt="" class="h-full" />
-        <div class="col-span-2 flex flex-col flex-nowrap font-mono">
-          <div class="my-5 flex flex-nowrap items-start font-semibold">
-            <h3 class="text-xl">
-              Cristian Veléz <span class="text-purple-950">-</span> 12/09/2023
-            </h3>
-            <div class="ml-auto mr-3 opacity-0 transition-opacity delay-200 duration-700 group-hover:opacity-100">
-              <button onclick="abrirModalEditar()" class="material-symbols-outlined cursor-pointer" title="Editar">
-                edit
-              </button>
-              <button class="material-symbols-outlined cursor-pointer" title="Borrar" onclick="abrirModalBorrar()">
-                delete
-              </button>
-            </div>
-          </div>
-          <p class="">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ut,
-            dolorum maiores aspernatur a dolore itaque odit eligendi sint,
-            voluptates officia aperiam quo! Repellendus necessitatibus culpa
-            quos eum qui magni.
-          </p>
+    </div>
+  </div>
+
+
+  <!-- Fin botón agregar cita -->
+  <div
+       class="group mx-auto mt-10 grid max-h-72 min-h-[18rem] min-w-[42rem] max-w-2xl grid-cols-3 gap-3 rounded-xl transition-shadow delay-200 duration-1000 hover:shadow-2xl">
+    <img src="https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw631d879e/original/90_1012146-1A08973_1W000_10_BuckleFormalShirt-Clothing-Versace-online-store_0_2.jpg?sw=850&q=85&strip=true"
+         alt="" class="h-full" />
+    <div class="col-span-2 flex flex-col flex-nowrap font-mono">
+      <div class="my-5 flex flex-nowrap items-start font-semibold">
+        <h3 class="text-xl">
+          Cristian Veléz <span class="text-purple-950">-</span> 12/09/2023
+        </h3>
+        <div class="ml-auto mr-3 opacity-0 transition-opacity delay-200 duration-700 group-hover:opacity-100">
+          <button onclick="abrirModalEditar()" class="material-symbols-outlined cursor-pointer" title="Editar">
+            edit
+          </button>
+          <button class="material-symbols-outlined cursor-pointer" title="Borrar" onclick="abrirModalBorrar()">
+            delete
+          </button>
         </div>
       </div>
+      <p class="mb-5">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ut,
+        dolorum maiores aspernatur a dolore itaque odit eligendi sint,
+        voluptates officia aperiam quo! Repellendus necessitatibus culpa
+        quos eum qui magni.
+      </p>
+      <h2 class="font-black">Estado: <span></span>Pendiente </h2>
     </div>
-    <!--VERSIÓN ADMIN FIN-->
+  </div>
+  </div>
+  <!--VERSIÓN ADMIN FIN-->
   </div>
   <!-- INICIO MODALES -->
 
   <!-- NODAL AGREGAR  -->
-  <form id="modalAgregar"
-        class=" hidden  z-50 fixed inset-0 bg-black/50 flex-nowrap justify-center items-center w-screen h-screen">
+  <form id="modalAgregar" name="agregar"
+        class="  z-50 fixed inset-0 hidden bg-black/50 flex-nowrap justify-center items-center w-screen h-screen">
 
     <!-- Slide 1 -->
-    <div id="slide1" class="z-[100] animate-zoomOut fixed   bg-gray-800 rounded-lg w-[27rem] h-60  ">
+    <div id="slide1" class="z-[100] animate-zoomOut  bg-gray-800 rounded-lg w-[27rem] h-60  ">
+
       <div class=" flex flex-nowrap items-center justify-around self-start  w-full h-20 bg-gray-900 text-white ">
         <h2 class="text-4xl font-bold font-mono text-center text-white underline-offset-4 underline-pink-700">
           Agregar Nombre</h2>
-        <button class="mt-2 hover:text-gray-300" title="cerrar"><span style="font-size: 2rem;"
-                class="material-symbols-outlined">
+        <button type="button" onclick="cerrarModalCita()"
+                class="mt-2 hover:scale-95 transition duration-300 hover:text-gray-300" title="cerrar"><span
+                style="font-size: 2rem;" class="material-symbols-outlined">
             close
           </span></button>
 
@@ -144,8 +168,45 @@
                              p-2 bg-gray-800 outline-pink-800 shadow-md shadow-pink-800  focus:outline-pink-800 outline focus:outline-2 rounded-lg font-extrabold"
                  type="text" name="" placeholder="Digita el nombre..." id="">
           <button title="Siguiente" type="button" onclick="cambiarSlide1()"
-                  class="boton mt-1.5  ml-3  hover:text-pink-700  text-pink-900 hidden"><span style="font-size: 2rem;"
-                  class="material-symbols-outlined">
+                  class="boton mt-1.5  ml-3 hover:translate-x-1 transition duration-300  hover:text-pink-700  text-pink-900"><span
+                  style="font-size: 2rem;" class="material-symbols-outlined">
+              navigate_next
+            </span></button>
+        </div>
+      </div>
+
+    </div>
+    <!-- Slide 2 -->
+    <div id="slide2" class="z-[100] hidden animate-enteringModal   bg-gray-800 rounded-lg w-[27rem] h-60  ">
+      <div class=" flex flex-nowrap items-center justify-around self-start  w-full h-20 bg-gray-900 text-white ">
+        <h2 class="text-4xl font-bold font-mono text-center text-white underline-offset-4 underline-pink-700">
+          Agregar fecha</h2>
+        <button type="button" onclick="cerrarModalCita()"
+                class="mt-2 hover:scale-95 transition duration-300 hover:text-gray-300" title="cerrar"><span
+                style="font-size: 2rem;" class="material-symbols-outlined">
+            close
+          </span></button>
+
+      </div>
+      <!-- Formulario agregar cita -->
+
+      <div class="">
+        <div class=" flex items-center  justify-center mt-12">
+          <button title="Siguiente" type="button" onclick="volverSlide1()"
+                  class="boton mt-1.5  hover:-translate-x-1 transition duration-300  hover:text-pink-700  text-pink-900 "><span
+                  style="font-size: 2rem;" class="material-symbols-outlined">
+              navigate_before
+            </span></button><input readonly
+                 class="texto ml-2 inline-block  border-none  text-white  text-xl w-52
+                                     p-2 bg-gray-800 outline-pink-800 shadow-md shadow-pink-800  focus:outline-pink-800 outline focus:outline-2 rounded-lg font-extrabold"
+                 type="text" name="" placeholder="D/M/A/Hh:Mm" id="">
+          <button title="Agregar fecha"
+                  class="text-white hover:text-gray-400 hover:scale-95 transition duration-300  mt-1.5 ml-1 mr-3">
+            <span style="font-size: 2.5rem;" class="material-symbols-outlined"> calendar_month </span>
+          </button>
+          <button title="Siguiente" type="button" onclick="cambiarSlide2()"
+                  class="boton mt-1.5  hover:translate-x-1 transition duration-300  hover:text-pink-700  text-pink-900 "><span
+                  style="font-size: 2rem;" class="material-symbols-outlined">
               navigate_next
             </span></button>
         </div>
@@ -153,27 +214,88 @@
 
     </div>
 
-    <!-- Slide 2 -->
-    <div class="  animate-zoomOut fixed   bg-gray-800 rounded-lg w-[27rem] h-60  ">
+    <!-- Slide 3 -->
+    <div id="slide3" class="z-[100] animate-enteringModal hidden   bg-gray-800 rounded-lg w-[27rem] h-60  ">
       <div class=" flex flex-nowrap items-center justify-around self-start  w-full h-20 bg-gray-900 text-white ">
         <h2 class="text-4xl font-bold font-mono text-center text-white underline-offset-4 underline-pink-700">
-          Agregar Fecha</h2>
-        <button type="button" onclick="cambiarSlide2()" class="mt-2 hover:text-gray-300" title="cerrar"><span
+          Agregar Objetivo </h2>
+        <button type="button" onclick="cerrarModalCita()"
+                class="mt-2 hover:scale-95 transition duration-300 hover:text-gray-300" title="cerrar"><span
                 style="font-size: 2rem;" class="material-symbols-outlined">
             close
           </span></button>
 
       </div>
+      <!-- Formulario agregar cita -->
+
       <div class="">
-        <div class=" flex items-center  justify-center mt-12"><input
-                 class="texto inline-block  border-none  text-white text-xl
-                                       p-2 bg-gray-800 outline-pink-800 shadow-md shadow-pink-800  focus:outline-pink-800 outline focus:outline-2 rounded-lg font-extrabold"
-                 type="text" name="" placeholder="Digita el nombre..." id="">
-          <button title="Siguiente" class="boton mt-1.5  ml-3  hover:text-pink-700  text-pink-900 hidden"><span
+        <div class=" flex items-center  justify-center my-5">
+          <button title="Siguiente" type="button" onclick="volverSlide2()"
+                  class="boton mt-1.5  hover:-translate-x-1 transition duration-300  hover:text-pink-700  text-pink-900 "><span
+                  style="font-size: 2rem;" class="material-symbols-outlined">
+              navigate_before
+            </span></button>
+          <textarea name=""
+                    class="texto p-2 inline-block  border-none  text-white text-lg
+                              bg-gray-800 outline-pink-800 shadow-md shadow-pink-800  focus:outline-pink-800 outline focus:outline-2  font-extrabold overflow-hidden resize-none  whitespace-normal  text-md w-[80%]  focus:border-none rounded-lg"
+                    id="" rows="4" placeholder="Ingresa el objetivo de la cita..."></textarea>
+          <button title="Siguiente" type="button" onclick="cambiarSlide3()"
+                  class="boton mt-1.5  hover:translate-x-1 transition duration-300  hover:text-pink-700  text-pink-900 "><span
                   style="font-size: 2rem;" class="material-symbols-outlined">
               navigate_next
             </span></button>
         </div>
+      </div>
+
+    </div>
+    <div id="slide4" class="z-[100]  animate-enteringModal hidden text-center  bg-gray-800 rounded-lg w-[27rem] h-60  ">
+      <div class=" flex flex-nowrap items-center justify-around  self-start  w-full h-20 bg-gray-900 text-white ">
+        <h2 class="text-4xl font-bold font-mono text-center text-white underline-offset-4 underline-pink-700">
+          Agregar Cita </h2>
+        <button type="button" onclick="cerrarModalCita()"
+                class="mt-2 hover:scale-95 transition duration-300 hover:text-gray-300" title="cerrar"><span
+                style="font-size: 2rem;" class="material-symbols-outlined">
+            close
+          </span></button>
+
+      </div>
+      <!-- Formulario agregar cita -->
+
+      <div class="">
+        <div class=" flex items-center  justify-center mt-9 mb-2 ">
+          <button title="Siguiente" type="button" onclick="volverSlide3()"
+                  class="boton mt-1.5  hover:-translate-x-1 transition duration-300  hover:text-pink-700  text-pink-900 "><span
+                  style="font-size: 2rem;" class="material-symbols-outlined">
+              navigate_before
+            </span></button>
+          <div class=" mt-1.5    text-white hover:scale-95 transition duration-300 hover:text-gray-300">
+            <span style="font-size: 2rem;" class="inline-block material-symbols-outlined">
+              add_a_photo
+            </span>
+          </div>
+          <h2 class="text-md text-white inline-block font-bold font-mono mx-2">¿Desea Agregar una referencia?</h2>
+          <button type="button" class="bg-gray-900 hover:shadow-md 
+                  hover:scale-105 hover:bg-gray-950
+                  hover:shadow-purple-800 text-purple-800 outline flex rounded-md  text-center"
+                  onclick="botonAgregarFotoCita()"><span id="span1" class="invisible material-symbols-outlined">
+              check
+            </span></button>
+          <!-- SUBMIT FORMULARIO -->
+        </div>
+        <div class="mx-auto"><button id="agregarFoto" type="button" onclick=""
+                  class=" transition animate-[fadeIn_0.5s] hidden text-white duration-300 delay-75 text-center bg-purple-700  rounded-md hover:scale-105 hover:shadow-md  hover:shadow-purple-900 w-28 h-10 hover:bg-purple-900 group"><span
+                  class="font-semibold group-hover:font-bold group-hover:hidden">Agregar</span>
+            <span class="group-hover:inline-block hidden">
+              <span class="material-symbols-outlined ">
+                add
+              </span>
+            </span>
+          </button>
+          <input type="submit"
+                 class="transition ml-5 mx-auto inline-block text-white duration-300 delay-75 bg-pink-600 h-10 rounded-md hover:scale-105 hover:shadow-md  hover:shadow-pink-800 w-28 hover:bg-pink-500 group"
+                 value="Enviar">
+        </div>
+
       </div>
 
     </div>
@@ -222,11 +344,19 @@
             </button>
           </div>
           <textarea name=""
-                    class="my-2 overflow-hidden resize-none border-none whitespace-normal text-white text-md w-full max-h-full min-h-full bg-gray-800 focus:border-none focus:outline-gray-800 rounded-lg"
-                    id="" rows="7">
+                    class="mt-2 overflow-hidden resize-none border-none whitespace-normal text-white text-md w-full max-h-full min-h-full bg-gray-800 focus:border-none focus:outline-gray-800 rounded-lg"
+                    id="" rows="6">
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio maxime cum laborum ipsum, esse quaerat non porro voluptatem. Exercitationem officiis quos vel neque illum corporis dolorem repudiandae? Harum, debitis vero!
 </textarea>
-          <div class="flex text-white font-mono text-lg font-bold justify-around mb-5 mt-2">
+          <div><label for="" class="font-mono text-xl text-white">Estado:</label> <select
+                    class="bg-gray-800 text-center text-white font-bold font-mono focus:ring hover:ring ring-pink-800 ring-offset-2"
+                    name="" id="">
+              <option selected value="1">Pendiente</option>
+              <option value="2">arrobs</option>
+              <option value="3">adios</option>
+              <option value="4">Hola</option>
+            </select></div>
+          <div class="flex text-white font-mono text-lg font-bold justify-around mb-5 mt-5">
             <button type="button" onclick="cerrarModalEditar()"
                     class="transition duration-300 delay-75 bg-red-500 h-10 rounded-md hover:scale-105 hover:shadow-md inline-block hover:shadow-red-800 w-28 hover:bg-red-600 group">
               <span class="group-hover:font-bold group-hover:hidden">Cancelar</span>

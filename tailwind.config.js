@@ -5,18 +5,32 @@ module.exports = {
     extend: {
       
       animation: {
+        enteringModal: "enteringModal 0.5s ease-in-out",
+        backModal: "backModal 0.5s ease-in-out",
         fadeIn: "fadeIn 2s ease-in-out",
-<<<<<<< HEAD
-        fadeOut: "fadeIn 0.5s ease-in-out",
+        fadeOut: "fadeOut 0.5s ease-in-out",
         zoomIn: "zoomIn 0.5s ease-in-out",
         zoomOut: "zoomOut 0.5s ease-in-out",
         leaving: "leaving 1s ease-in-out",
         entrando: "entrando 1s ease-in-out",
-=======
-        zoomIn: "zoomIn 1s ease-in-out",
->>>>>>> fd4041bc77bf097e153e173be2d3c7c4aab9faef
       },
       keyframes: {
+        enteringModal: {
+          "0%": {
+                transform: "translateX(-100%)"
+              },
+          "100%": {
+            transform: "translateX(0)"
+          },
+        },
+        backModal: {
+          "0%": {
+                transform: "translateX(100%)"
+              },
+          "100%": {
+            transform: "translateX(0)"
+          },
+        },
         leaving: {
           "0%": {
             top: 0,
